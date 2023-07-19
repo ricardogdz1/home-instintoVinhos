@@ -1,0 +1,72 @@
+.carrossel {
+    height: 450px;
+    margin: 0 1em;
+}
+
+.swiper {
+    height: 450px;
+}
+
+.swiper-slide img {
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.instinto__vinhos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__instinto {
+    margin: 0 0 1em 0;
+}
+
+.instagram__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 1.5em 2.5em 1.5em;    
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem1{
+    margin: 1em; 
+    width: 350px;
+    height: 170px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+@media screen and (min-width: 820px) {
+
+    .swiper-slide img {
+        display: flex;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .instagram__box {
+        flex-direction: row;
+    }  
+}
+
+@media screen and (min-width: 1400px) {
+
+    .box1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

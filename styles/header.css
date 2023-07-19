@@ -1,0 +1,145 @@
+:root {
+    --cor-vinho: #700000
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;    
+}
+
+.logo__taça {
+    height: 2.5em;
+    margin: .7em;
+}
+
+.peça__aqui {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    padding: 0.5em;
+    background-color: #700000;
+    border-radius: 5px;
+    color: rgb(230, 230, 230);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img__wpp {
+    height: 1.5em;
+}
+
+.cabeçalho__menu-hamburguer {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 7%;
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: inline;
+}
+
+.container__botao {
+    display: none;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    z-index: 9999;
+    position: relative;
+    padding: .6em;
+    background-color: white;
+    border-bottom: 1px groove;
+}
+
+.lista-menu__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #afafaf
+}
+
+.lista-menu__item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #700000;
+    padding-left: .7em;
+    padding-bottom: 1em;
+}
+
+.swiper {
+    position: relative;
+    z-index: 0;
+}
+
+.links {
+    display: none;
+}
+
+.quemSomos {
+    display: none;
+}
+
+@media screen and (min-width: 820px) {
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .container__rotulo {
+        display: none;
+    }
+
+    .links {
+        display: inline;
+    }
+
+    .lista-menu__link {
+        margin-left: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #700000;
+        border-radius: 20px;
+        padding: .5em;
+    }
+
+    .lista-menu__link:hover {
+        background-color: #c2c2c2;
+    }
+
+
+    .quemSomos {
+        display: inline;
+        align-items: center;
+        gap: .5em;
+        position: absolute;
+        right: 10em;
+        margin-right: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #700000;
+        padding: .5em;
+        border-radius: 10px;
+    }
+
+    .quemSomos:hover {
+        border: 1px solid #c2c2c2;
+    }
+
+    .lista-menu {
+        display: none;
+    }
+}

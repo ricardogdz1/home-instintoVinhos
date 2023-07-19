@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>INSTINTO VINHOS</title>
+</head>
+<body>
+
+    <header>
+        <div class="cabeçalho">
+            <img src="img/taça.png" alt="logo taça" class="logo__taça">
+            <nav class="links">
+                <a href="#" class="lista-menu__link">Vinhos</a>
+                <a href="#" class="lista-menu__link">Espumantes</a>
+            </nav>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">CATÁLOGO</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Vinhos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Espumantes</a>
+                </li>
+            </ul>
+            <div class="divMenuHamburguer">
+                <img src="img/hamburguer.png" alt="Menu hamburguer" class="cabecalho__menu-hamburguer" height="17px" width="17px">
+            </div>
+            <a href="#" class="quemSomos">Quem Somos</a>
+            <a href="https://api.whatsapp.com/send/?phone=5554991630476&text&type=phone_number&app_absent=0" class="peça__aqui"> <img src="img/wpp3.png" class="img__wpp"> Peça seu Vinho</a>
+        </div>    
+    </header>
+
+    <section class="instinto__vinhos">
+        <img src="img/instinto.png" alt="logo Instinto Vinhos" class="logo__instinto" height="30x" width="30px">
+    </section>
+
+    <section class="carrossel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/donGuerinoMobile.png" alt="Vinicula Don Guerino"></div>
+                <div class="swiper-slide"><img src="img/pedraCancelamobile.png" alt="Pedra Cancela Vinhos"></div>
+                <div class="swiper-slide"><img src="img/vinhaManus.jpg" alt="Imagem de vinhos"></div>
+                <div class="swiper-slide"><img src="img/imagemCesta.jpg" alt="Imagem de vinhos"></div>
+                <div class="swiper-slide"><img src="img/payador.jpg" alt="Imagem de vinhos"></div>
+                <div class="swiper-slide"><img src="img/vinicula.jpg" alt="Imagem de vinhos"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+    
+        breakpoints: {
+        820: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        1024: {
+        slidesPerView: 4,
+        spaceBetween: 20
+        }   
+        },
+        });
+    </script>
+
+    <section class="instagram__box">
+            <div class="box1">
+                <img src="img/cestas.png" class="imagem1">
+                <img src="img/serraGaucha.png" class="imagem1">
+            </div>
+            <div class="box1">
+                <img src="img/chocolates.png" class="imagem1">
+                <a href="https://www.instagram.com/instinto_vinhos_erechim_rs/"> <img src="img/imagemInstagram.png" class="imagem1"> </a>
+            </div>
+    </section>
+
+    <footer class="rodapé">
+        <h3 class="frase">Experiência única para momentos especiais.</h3>
+        <div class="atendimento">
+            <h3 class="tituloAtendimento">Horários de Atendimento</h3>
+            <p class="horarisoAtendimento">Seg-Sex: 8h - 18h <br> Sáb: 8h - 12h</p>
+        </div>       
+        <p class="endereço">Rua Cezário Matos, nº 98 - Centro, Erechim - RS - CEP 99.700-094</p>
+        <p class="seBeber">SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p>
+    </footer>
+
+</body>
+</html>
